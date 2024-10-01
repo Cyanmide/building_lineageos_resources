@@ -38,7 +38,7 @@ _____
 and  
 `EXAMPLE_DEVICE_CODENAME_in_lowercase`  
 Let's start with the EXAMPLE_MANUFACTURER_in_lowercase:  
-This one is somewhat obvious. The device that you're building for's manufacturer. Samsung devices are samsung, LG is lge, and so on. Whatever the manufacturer is, goes here, but in all lowercase.  
+This one is somewhat obvious. The device that you're building for's manufacturer. SAMSUNG devices are samsung, LG Electronics would be lge, and so on. Whatever the manufacturer is, goes here, but in all lowercase.  
   
 Now, the EXAMPLE_DEVICE_CODENAME_in_lowercase:  
 This one is also pretty obvi. Your device's codename, again in lowercase. You should already know this, as this is the key to finding the correct repo links.  
