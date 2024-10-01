@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <remote name="vendor"
+            fetch="https://github.com"
+            revision="lineage-20" />
+	
+    <remote name="device"
+            fetch="https://github.com"
+            revision="lineage-20"/>
+
+    <remote name="kernel"
+            fetch="https://github.com"
+            revision="lineage-20"/>
+
+    <!--Device Trees-->
+    <project path="device/apple/d53g" name="apple/android_device_iphone_12" remote="device" />
+
+
+    <!--Kernel-->
+    <project path="kernel/apple/d53g" name="apple/android_kernel_iphone_12" remote="kernel" />
+
+
+    <!-- Vendor folders -->
+    <project path="vendor/apple/d53g" name="apple/android_vendor_iphone_12" remote="vendor" />
+</manifest>
