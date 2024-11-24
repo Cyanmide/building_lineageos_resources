@@ -4,24 +4,24 @@
 
     <remote name="vendor"
             fetch="https://github.com"
-            revision="EXAMPLE_BRANCH" />
+            revision="BRANCH" />
 	
     <remote name="device"
             fetch="https://github.com"
-            revision="EXAMPLE_BRANCH"/>
+            revision="BRANCH"/>
 
     <remote name="kernel"
             fetch="https://github.com"
-            revision="EXAMPLE_BRANCH"/>
+            revision="BRANCH"/>
 
     <!--Device Trees-->
-    <project path="device/EXAMPLE_MANUFACTURER_in_lowercase/EXAMPLE_DEVICE_CODENAME_in_lowercase" name="EXAMPLE_GITHUB_USERNAME/EXAMPLE_GITHUB_REPO" remote="device" />
+    <project path="device/MANUFACTURER_in_lowercase/DEVICE_CODENAME" name="GITHUB_USERNAME/GITHUB_REPO" remote="device" />
 
 
     <!--Kernel-->
-    <project path="kernel/EXAMPLE_MANUFACTURER_in_lowercase/EXAMPLE_DEVICE_CODENAME_in_lowercase" name="EXAMPLE_GITHUB_USERNAME/EXAMPLE_GITHUB_REPO" remote="kernel" />
+    <project path="kernel/MANUFACTURER_in_lowercase/DEVICE_CODENAME" name="GITHUB_USERNAME/GITHUB_REPO" remote="kernel" />
 
 
     <!-- Vendor folders -->
-    <project path="vendor/EXAMPLE_MANUFACTURER_in_lowercase/EXAMPLE_DEVICE_CODENAME_in_lowercase" name="EXAMPLE_GITHUB_USERNAME/EXAMPLE_GITHUB_REPO" remote="vendor" />
+    <project path="vendor/MANUFACTURER_in_lowercase/DEVICE_CODENAME" name="GITHUB_USERNAME/GITHUB_REPO" remote="vendor" />
 </manifest>
