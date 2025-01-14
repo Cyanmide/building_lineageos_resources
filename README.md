@@ -21,34 +21,33 @@ I actually have a 'Building LineageOS for Unsupported Device' guide over on XDA 
   
 ## Creating your manifest file
 Download the [example.xml](https://github.com/kingkwahli/building_lineageos_resources/blob/main/example.xml) and open it in a text editor.  
-  
 
-#### **What it all means:**​
+#### **Step 1: Identify the correct branch**
+Take a look at the repository branch, as shown in the example image below:
 
-What it all means:​
+![Branch Example](branch.jpeg)
 
-BRANCH
-[Take a peek at this:
-branch.jpeg
-See how it says cm-14.1?
-Whatever it says there for the repository(s) you've found replaces BRANCH. Remember that each different repository for the device, vendor, and kernel will not always have the same branch name.
+In this example, the branch is `cm-14.1`. Replace `[BRANCH]` in the example file with the actual branch name for the repository you’re using. Keep in mind that the branch names may differ for the device, vendor, and kernel repositories.
+#### **Step 2: Set up folder titles**
 
-MANUFACTURER_in_lowercase
-and
-DEVICE_CODENAME_in_lowercase
-Let's start with the MANUFACTURER_in_lowercase:
-This one is simply the device manufacturer. Samsung devices are samsung, LG Electronics are lge, and so on. Whatever the manufacturer is, goes here, but in all lowercase. This can be adjusted, this will just be the name of the manufacturer folder.
+- Replace `[MANUFACTURER_in_lowercase]` with the name of the device manufacturer in lowercase.
+  - **Examples:**
+    - Samsung → `samsung`
+    - LG → `lge`
+    - OnePlus → `oneplus`
+  - This will be used as the name of the manufacturer folder.
 
-Now, the DEVICE_CODENAME_in_lowercase:
-Self-explanatory. Your device's codename, again in lowercase. You should already know this, as this is the key to finding the correct repo links.
+- Replace `[DEVICE_CODENAME_in_lowercase]` with your device's codename in lowercase.
+  - This is typically the same name as the repository for your device.
 
-GIT_USERNAME/GIT_REPO
+- Replace `[GIT_USERNAME]` with the username or group of who created the repository.
+- Replace `[GIT_REPO]` with the repository name.
 
-Easy. GIT_USERNAME would be the username of the person/group who created the repository. For example, in sixito007/android_vendor_samsung_goyave3g, sixito007 would be the GIT_USERNAME.
-GIT_REPO follows similar directions. In that same example, android_vendor_samsung_goyave3g would be the GIT_REPO
+**Example:**
+For the repository `sixito007/android_vendor_samsung_goyave3g`:
+- `GIT_USERNAME`: `sixito007`
+- `GIT_RE
 
-After that’s all done, save the file to ~/android/lineage/.repo/local_manifests/devicecodename.xml (create local_manifests folder if it doesn’t exist)
-<br>  
 Obviously devicecodename would be your device’s codename, in my case goyave3g.xml
 ##  The best system to build on
 <b>OS:</b> The best system to use would be Ubuntu, or anything Ubuntu-based. Pretty  anything on <tr><td align="center"><a href="https://monovm.com/blog/ubuntu-based-distros/">this page</a> is usable. I recommend  <tr><td align="center"><a href="https://linuxmint.com/">Linux Mint Cinnamon</a>, if you are only using it for building, but if you want a good, daily driver, full Linux install, I recommend <tr><td align="center"><a href="https://zorin.com/os/">Zorin OS</a>.
