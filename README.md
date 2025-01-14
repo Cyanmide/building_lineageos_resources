@@ -25,30 +25,29 @@ Download the [example.xml](https://github.com/kingkwahli/building_lineageos_reso
 
 #### **What it all means:**​
 
-`EXAMPLE_BRANCH`  
-Take a peek at this:  
+What it all means:​
 
-![branch.jpeg](https://xdaforums.com/attachments/branch-jpeg.6143177/ "branch.jpeg")
+BRANCH
+[Take a peek at this:
+branch.jpeg
+See how it says cm-14.1?
+Whatever it says there for the repository(s) you've found replaces BRANCH. Remember that each different repository for the device, vendor, and kernel will not always have the same branch name.
 
-  
-See how it says cm-14.1?  
-Whatever it says there for the repository(s) you've found replaces EXAMPLE_BRANCH. _Remember that each different repository for the device, vendor, and kernel will not always have the same branch name._  
-_____
-`EXAMPLE_MANUFACTURER_in_lowercase`  
-and  
-`EXAMPLE_DEVICE_CODENAME_in_lowercase`  
-Let's start with the EXAMPLE_MANUFACTURER_in_lowercase:  
-This one is somewhat obvious. The device that you're building for's manufacturer. SAMSUNG devices are samsung, LG Electronics would be lge, and so on. Whatever the manufacturer is, goes here, but in all lowercase.  
-  
-Now, the EXAMPLE_DEVICE_CODENAME_in_lowercase:  
-This one is also pretty obvi. Your device's codename, again in lowercase. You should already know this, as this is the key to finding the correct repo links.  
-_____
-`EXAMPLE_GITHUB_USERNAME/EXAMPLE_GITHUB_REPO`  
-  
-Easy. EXAMPLE_GITHUB USERNAME would be the username of the person who created the repository. For example, in sixito007/android_vendor_samsung_goyave3g, sixito007 would be the EXAMPLE_GITHUB_USERNAME.  
-EXAMPLE_GITHUB_REPO follows similar directions. In that same example, android_vendor_samsung_goyave3g would be the EXAMPLE_GITHUB_REPO  
-_____
-After that’s all done, save the file to ~/.repo/local_manifests/devicecodename.xml (create local_manifests folder if it doesn’t exist)  
+MANUFACTURER_in_lowercase
+and
+DEVICE_CODENAME_in_lowercase
+Let's start with the MANUFACTURER_in_lowercase:
+This one is simply the device manufacturer. Samsung devices are samsung, LG Electronics are lge, and so on. Whatever the manufacturer is, goes here, but in all lowercase. This can be adjusted, this will just be the name of the manufacturer folder.
+
+Now, the DEVICE_CODENAME_in_lowercase:
+Self-explanatory. Your device's codename, again in lowercase. You should already know this, as this is the key to finding the correct repo links.
+
+GIT_USERNAME/GIT_REPO
+
+Easy. GIT_USERNAME would be the username of the person/group who created the repository. For example, in sixito007/android_vendor_samsung_goyave3g, sixito007 would be the GIT_USERNAME.
+GIT_REPO follows similar directions. In that same example, android_vendor_samsung_goyave3g would be the GIT_REPO
+
+After that’s all done, save the file to ~/android/lineage/.repo/local_manifests/devicecodename.xml (create local_manifests folder if it doesn’t exist)
 <br>  
 Obviously devicecodename would be your device’s codename, in my case goyave3g.xml
 ##  The best system to build on
