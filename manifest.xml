@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <remote name="vendor"
+            fetch="https://github.com"
+            revision="BRANCH"/>
+	
+    <remote name="device"
+            fetch="https://github.com"
+            revision="BRANCH"/>
+
+    <remote name="kernel"
+            fetch="https://github.com"
+            revision="BRANCH"/>
+
+    <!--Device Trees-->
+    <project path="device/samsung/zenlte" name="samsungexynos7420/android_device_samsung_zenlte" remote="device" />
+
+
+    <!--Kernel-->
+    <project path="kernel/samsung/zenlte" name="samsungexynos7420/android_kernel_samsung_universal7420" remote="kernel" />
+
+
+    <!-- Vendor folders -->
+    <project path="vendor/samsung/zenlte" name="samsungexynos7420/proprietary_vendor_samsung" remote="vendor" />
+</manifest>
