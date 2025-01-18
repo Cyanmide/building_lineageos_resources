@@ -4,15 +4,15 @@
 
     <remote name="vendor"
             fetch="https://github.com"
-            revision="BRANCH"/>
+            revision="lineage-20-new"/>
 	
     <remote name="device"
             fetch="https://github.com"
-            revision="BRANCH"/>
+            revision="lineage-19.1"/>
 
     <remote name="kernel"
             fetch="https://github.com"
-            revision="BRANCH"/>
+            revision="lineage-20-new"/>
 
     <!--Device Trees-->
     <project path="device/samsung/zenlte" name="samsungexynos7420/android_device_samsung_zenlte" remote="device" />
